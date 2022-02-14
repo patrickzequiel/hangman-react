@@ -5,7 +5,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettify": "prettier --write '**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
     "next": "12.0.10",
@@ -14,6 +15,7 @@
   },
   "devDependencies": {
     "eslint": "8.9.0",
-    "eslint-config-next": "12.0.10"
+    "eslint-config-next": "12.0.10",
+    "prettier": "^2.5.1"
   }
 }
