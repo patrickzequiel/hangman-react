@@ -1,0 +1,26 @@
+button {
+    height: 30px;
+
+    background-color: white;
+    color: #757575;
+    border: 2px solid #e7e7e7;
+    border-radius: 10%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    margin-left: 5px;
+}
