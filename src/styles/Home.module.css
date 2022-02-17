@@ -114,8 +114,13 @@
 }
 .lifeBar {
   display: grid;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
+  border-radius: 0.2rem;
+  border: solid 0.1rem black;
 }
 
 @media (max-width: 400px) {
@@ -152,6 +157,7 @@
 @media (min-width: 200px) {
   .buttonLetter {
     grid-template-columns: repeat(4, 1fr);
+    gap: 0rem;
   }
 }
 
