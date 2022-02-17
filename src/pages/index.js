@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-import styles from "../styles/Home.module.css";
 import getPokemon from "./api/pokemon.js";
+
+import styles from "../styles/Home.module.css";
+import Life from "../assets/life.svg";
 
 export default function Home({ pokemon, image }) {
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -35,13 +37,16 @@ export default function Home({ pokemon, image }) {
       <main className={styles.main}>
         {/* eslint-disable-next-line react/no-unescaped-entities */}
         <h1 className={styles.title}>Who's that pokemon?</h1>
-        <Image
-          alt="pokemon-image"
-          src={image}
-          className={styles.pokemonImage}
-          width="200px"
-          height="200px"
-        />
+
+        <div className={styles.lifeBar}>
+          <Image alt="life" src={Life} />
+          <Image alt="life" src={Life} />
+          <Image alt="life" src={Life} />
+        </div>
+
+        <div className={styles.pokemonImage}>
+          <Image alt="pokemon-image" src={image} width="200px" height="200px" />
+        </div>
         <div className={styles.word}>
           <p className={styles.description}>{maskedWord}</p>
         </div>
